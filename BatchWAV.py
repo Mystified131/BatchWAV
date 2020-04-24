@@ -15,7 +15,7 @@ for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\B
             outstr = "RB" + str(file)
             pubstr = instr + ": " + outstr
             print(pubstr)
-            y, s = librosa.load(instr, sr = 44100)
+            y, s = librosa.load(instr, sr = 22050)
             librosa.output.write_wav(outstr, y, s)
 
 
